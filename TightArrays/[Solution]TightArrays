@@ -1,0 +1,11 @@
+#!/bin/python3
+
+import sys
+
+def shortestTightArray(a, b, c):
+    return abs(a-b)+abs(b-c)+1
+
+a, b, c = input().strip().split(' ')
+a, b, c = [int(a), int(b), int(c)]
+result = shortestTightArray(a, b, c)
+print(result)
